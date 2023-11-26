@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px solid black;
+  display: grid;
+}
+.pageButtons{
+  grid-column-start: col-end 6;
+  padding-top: 10px;
+}
+.pageButton{
+  height: 30px;
+  font-weight: bold;
+}
+.selectedBtn{
+  background-color: rgb(43, 95, 240);
+  color: white;
+}
+.unselectedBtn {
+  cursor: pointer;
+}
