@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gal-Rasnic-26-11-2023/static/css/main.475bc96c.css",
-    "main.js": "/Gal-Rasnic-26-11-2023/static/js/main.64fdc8fb.js",
+    "main.js": "/Gal-Rasnic-26-11-2023/static/js/main.3c3a7080.js",
     "static/media/heartfilled.svg": "/Gal-Rasnic-26-11-2023/static/media/heartfilled.43983d8a9e8ec6f40ac0dc0aee93b29e.svg",
     "static/media/sun.svg": "/Gal-Rasnic-26-11-2023/static/media/sun.78318e5bb804c9ec3dc26d1077f66da4.svg",
     "index.html": "/Gal-Rasnic-26-11-2023/index.html",
@@ -11,10 +11,10 @@
     "static/media/moon.svg": "/Gal-Rasnic-26-11-2023/static/media/moon.c29c74e0c25fe8da56d4265aff6fb84a.svg",
     "static/media/moondark.svg": "/Gal-Rasnic-26-11-2023/static/media/moondark.31ad518fcf11698003bdc9bc62958132.svg",
     "main.475bc96c.css.map": "/Gal-Rasnic-26-11-2023/static/css/main.475bc96c.css.map",
-    "main.64fdc8fb.js.map": "/Gal-Rasnic-26-11-2023/static/js/main.64fdc8fb.js.map"
+    "main.3c3a7080.js.map": "/Gal-Rasnic-26-11-2023/static/js/main.3c3a7080.js.map"
   },
   "entrypoints": [
     "static/css/main.475bc96c.css",
-    "static/js/main.64fdc8fb.js"
+    "static/js/main.3c3a7080.js"
   ]
 }
