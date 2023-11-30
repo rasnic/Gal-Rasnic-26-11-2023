@@ -53,12 +53,12 @@ const Favorites = () => {
                     <Row className='justify-content-center dayText mt-2 mb-4' theme={clr}>{city.text}</Row>
                 </Card></Col>)
             })}</Row>}
-            <Toast isOpen={errToast}>
+            {errToast && <Toast isOpen={errToast}>
             <ToastHeader toggle={() => setErrToast()}/>
                 <ToastBody>
                     {errToast}
                 </ToastBody>
-            </Toast>
+            </Toast>}
         </>)
 }
 

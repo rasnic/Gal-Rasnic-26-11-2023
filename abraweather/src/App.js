@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route>
           <Route path="/" element={<Home />} />
-          <Route path="favorites" element={<Favorites />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Route>
       </Routes>
     </BrowserRouter>
