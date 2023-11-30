@@ -18,7 +18,7 @@ const Header = () => {
                 <ThemeSwitch/>
                 <ButtonGroup className="pageButtons" >
                     <Button className='selectedBtn mt-1' disabled >Home</Button>
-                    <Button className='unselectedBtn mt-1' color="primary"  onClick={() => {navigate('/favorites')}}>Favorites</Button>
+                    <Button className='unselectedBtn mt-1' color="primary"  onClick={() => {navigate('#/favorites')}}>Favorites</Button>
                 </ButtonGroup>
             </div>:
             <div className="header" theme={clr}>
