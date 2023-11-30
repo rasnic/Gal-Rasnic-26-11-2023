@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom"
+import { Routes, Route, HashRouter } from "react-router-dom"
 import React, {useState,useEffect} from 'react';
 import Home from "./views/home/Home"
 import Favorites from "./views/favorites/Favorites"
@@ -22,14 +22,14 @@ function App() {
   },[theme])
   return (
     <div className="App" theme={clr}>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route>
-          <Route path="/" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="#/" element={<Home />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="*/favorites" element={<Favorites />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </div>
   );
 }

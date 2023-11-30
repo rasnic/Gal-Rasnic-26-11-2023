@@ -12,7 +12,7 @@ const Header = () => {
         setClr(theme)
       },[theme])
 
-    return(<>{window.location.pathname === '/' ?
+    return(<>{window.location.pathname.indexOf('f') === -1?
             <div className="header" theme={clr}>
                 <DegreeSwitch/>
                 <ThemeSwitch/>
