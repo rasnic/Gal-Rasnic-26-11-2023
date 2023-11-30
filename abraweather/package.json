@@ -1,6 +1,6 @@
 {
+  "homepage": "https://rasnic.github.io",
   "name": "abraweather",
-  "homepage": "https://rasnic.github.io/Gal-Rasnic-26-11-2023",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
