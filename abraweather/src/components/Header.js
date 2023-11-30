@@ -4,15 +4,21 @@ import { useNavigate } from 'react-router-dom';
 import ThemeSwitch from './ThemeSwitch';
 import DegreeSwitch from './DegreeSwitch';
 import { useSelector} from 'react-redux'
-const Header = () => {
+const Header = (props) => {
     const navigate = useNavigate();
     const theme = useSelector((state) => state.theme.value)
     const [clr,setClr] = useState(theme)
- useEffect(() => {
+    const [page,setPage] = useState("home")
+ 
+    useEffect(() => {
         setClr(theme)
       },[theme])
 
-    return(<>{window.location.hash.indexOf('f') === -1?
+    useEffect(()=>{
+        setPage(props.page)
+    },[props.page])
+
+    return(<>{page === "home"?
             <div className="header" theme={clr}>
                 <DegreeSwitch/>
                 <ThemeSwitch/>

@@ -81,7 +81,7 @@ const Home = () => {
         }
     }
     return(<>
-        <Header/>
+        <Header page="home"/>
         <Container>
         <Row className='my-3 justify-content-center' xs="12">
             <Input placeholder='Search a city' className='searchInput' onChange={(event) => {setSearchText(event.target.value)}}/>

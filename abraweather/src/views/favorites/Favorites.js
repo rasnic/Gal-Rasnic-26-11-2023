@@ -44,7 +44,7 @@ const Favorites = () => {
     }
 
     return(<>
-        <Header/>
+        <Header page="favorites"/>
         {weatherData && <Row className="mb-3 citiesContainer mt-5">{weatherData.map((city) => {
                 return(<Col xl="2" lg="3" sm="4" xs="12"  key={city.id}><Card className='daysItem cursor-pointer' theme={clr} onClick={()=> openFavorite(city.city,city.id)}>
                     <Row className='justify-content-center dayText my-4' theme={clr}>{city.city}</Row>
