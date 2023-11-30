@@ -25,7 +25,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route>
-          <Route path="/" element={<Home />} />
+          <Route path="#/" element={<Home />} />
           <Route path="#/favorites" element={<Favorites />} />
         </Route>
       </Routes>

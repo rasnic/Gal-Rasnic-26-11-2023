@@ -3,7 +3,7 @@ import { Functions } from "./Functions";
 const apikey = "TXqYyE2MX9acwxjrclOFY8htIpfpXbGG"
 
 export async function get5DayForcast(cityId,city) {
-    const url = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + cityId + "?apikey=" + apikey + "&details=false&metric=true";
+    const url = "https://dataservice.accuweather.com/forecasts/v1/daily/5day/" + cityId + "?apikey=" + apikey + "&details=false&metric=true";
     const options = {
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -26,7 +26,7 @@ export async function get5DayForcast(cityId,city) {
 }
 
 export async function getLocations(searchPhrase) {
-    const url = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=" + apikey + "&q=" + searchPhrase;
+    const url = "https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=" + apikey + "&q=" + searchPhrase;
     const options = {
         headers: {
             'Accept': 'application/json, text/plain, */*',
@@ -45,7 +45,7 @@ export async function getLocations(searchPhrase) {
 }
 }
 export async function getCurrentWeather(locationId) {
-    const url = "http://dataservice.accuweather.com/currentconditions/v1/" + locationId + "?apikey=" + apikey;
+    const url = "https://dataservice.accuweather.com/currentconditions/v1/" + locationId + "?apikey=" + apikey;
     const options = {
         headers: {
             'Accept': 'application/json, text/plain, */*',
