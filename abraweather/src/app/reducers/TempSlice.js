@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  value: "cel",
+  value: !localStorage.getItem('temp') ? "cel" : localStorage.getItem('temp') === 'cel' ? "cel" : "fahr",
 }
 
 export const TempSlice = createSlice({
@@ -13,7 +13,6 @@ export const TempSlice = createSlice({
     },
   },
 })
-export const selectTheme = (state) => state.temp.value
 export const { change } = TempSlice.actions
 
 export default TempSlice.reducer
